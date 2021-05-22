@@ -1,24 +1,31 @@
 # shy-ui
+vuejs UI组件库
 
-## Project setup
-```
-yarn install
-```
+## 📦 安装
 
-### Compiles and hot-reloads for development
-```
-yarn serve
+```bash
+npm install antd --save
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
+```bash
+yarn add antd
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 🔨 示例
+全量引入使用
+```
+import Vue from 'vue'
+import shyUi from 'shy-ui'
+Vue.use(shyUi)
+```
+按需引入使用
+```
+import { SLink } from 'shy-ui'
+import 'shy-ui/lib/index.css'
+```
+CDN引入
+```
+引入组件
+<script src="https//unpkg.com/shy-ui/lib/index.umd.min.js">
+<link rel="stylesheet" href="https//unpkg.com/shy-ui/lib/index.css">
+```
